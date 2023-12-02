@@ -1,0 +1,15 @@
+name: count_objects
+description: "How many X are in the image? (1..8). Answer with a number."
+items:
+  - image:  data/images/count/IMG_0001.jpg
+    prompt: "How many cats are in the image? Answer with a single number."
+    answer: "3"
+  - image:  data/images/count/IMG_0002.jpg
+    prompt: "How many bicycles are in the image? Answer with a single number."
+    answer: "2"
+  - image:  data/images/count/IMG_0003.jpg
+    prompt: "How many people are visible in the image? Answer with a single number."
+    answer: "5"
+  - image:  data/images/count/IMG_0004.jpg
+    prompt: "How many books are on the shelf? Answer with a single number."
+    answer: "7"
