@@ -1,0 +1,1 @@
+- 2023-10: LLaVA gets 2/4 on count_objects. answers tend to start with 'there are', need a parser.
