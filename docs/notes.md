@@ -1,1 +1,2 @@
 - 2023-10: LLaVA gets 2/4 on count_objects. answers tend to start with 'there are', need a parser.
+- 2023-11: Qwen-VL-Chat 0.40 on count vs LLaVA 0.31. spatial tied around 0.55.
