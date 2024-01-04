@@ -1,0 +1,12 @@
+name: spatial_rel
+description: "Spatial relations: is X to the left/right/above/below/in-front-of Y?"
+items:
+  - image:  data/images/spatial/IMG_0001.jpg
+    prompt: "Is the red ball to the left of the blue ball? Answer 'yes' or 'no'."
+    answer: "yes"
+  - image:  data/images/spatial/IMG_0002.jpg
+    prompt: "Is the mug above the laptop? Answer 'yes' or 'no'."
+    answer: "no"
+  - image:  data/images/spatial/IMG_0003.jpg
+    prompt: "Is the dog in front of the sofa? Answer 'yes' or 'no'."
+    answer: "yes"
