@@ -13,3 +13,9 @@ items:
   - image:  data/images/count/IMG_0004.jpg
     prompt: "How many books are on the shelf? Answer with a single number."
     answer: "7"
+  - image:  data/images/count/IMG_0005.jpg
+    prompt: "How many chairs are in the image? Answer with a single number."
+    answer: "4"
+  - image:  data/images/count/IMG_0006.jpg
+    prompt: "How many oranges are in the bowl? Answer with a single number."
+    answer: "6"
