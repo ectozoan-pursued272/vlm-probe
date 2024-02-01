@@ -23,3 +23,8 @@ def parse_number(text):
 
 def score_count(pred, ref):
     return parse_number(pred) == ref.strip()
+
+
+def score_exact_word(pred, ref):
+    # NOTE: don't strip leading articles. "the cat" must NOT match "the dog".
+    return pred.strip().lower() == ref.strip().lower()
