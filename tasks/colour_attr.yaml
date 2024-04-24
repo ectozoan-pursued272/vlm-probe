@@ -1,0 +1,9 @@
+name: colour_attr
+description: "What colour is the X?"
+items:
+  - image:  data/images/colour/IMG_0001.jpg
+    prompt: "What colour is the umbrella? Answer with a single word."
+    answer: "yellow"
+  - image:  data/images/colour/IMG_0002.jpg
+    prompt: "What colour is the car? Answer with a single word."
+    answer: "black"
