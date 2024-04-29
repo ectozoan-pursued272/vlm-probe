@@ -1,0 +1,9 @@
+name: partial_occl
+description: "Is the X fully visible, partially occluded, or not visible at all?"
+items:
+  - image:  data/images/occl/IMG_0001.jpg
+    prompt: "Is the cat fully visible, partially occluded, or hidden? Answer with one word."
+    answer: "partially"
+  - image:  data/images/occl/IMG_0002.jpg
+    prompt: "Is the chair fully visible, partially occluded, or hidden? Answer with one word."
+    answer: "fully"
