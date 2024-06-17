@@ -1,0 +1,9 @@
+name: text_in_image
+description: "Read small text in the image. Mostly storefront signs and street signs."
+items:
+  - image:  data/images/text/IMG_0001.jpg
+    prompt: "What does the sign say? Answer with only the text on the sign."
+    answer: "open"
+  - image:  data/images/text/IMG_0002.jpg
+    prompt: "What does the street sign say? Answer with only the text on the sign."
+    answer: "no parking"
