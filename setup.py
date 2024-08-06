@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="vlm-probe",
-    version="0.0.1",
+    version="0.2.0",
     description="Probing fine-grained perception in vision-language models.",
     author="Xu Mingrui",
     license="MIT",
@@ -13,5 +13,7 @@ setup(
         "transformers>=4.40",
         "accelerate>=0.25",
         "pillow>=10.0",
-        "pyyaml>=6.0"],
+        "pyyaml>=6.0",
+        "tqdm",
+    ],
 )
