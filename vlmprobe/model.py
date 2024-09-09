@@ -12,7 +12,7 @@ def load(name, device="cuda", dtype="float16"):
     """Return (processor, model). Dispatches by name prefix."""
     hf = _hf()
     torch_dtype = getattr(torch, dtype)
-    if "llava" in name:
+    if "llava-" in name.lower() or "llava_" in name.lower():
         proc  = hf.AutoProcessor.from_pretrained(name)
         model = hf.LlavaForConditionalGeneration.from_pretrained(name, torch_dtype=torch_dtype)
     elif "Qwen-VL" in name or "qwen-vl" in name.lower():
