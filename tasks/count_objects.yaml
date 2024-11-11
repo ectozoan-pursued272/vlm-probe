@@ -19,3 +19,5 @@ items:
   - image:  data/images/count/IMG_0006.jpg
     prompt: "How many oranges are in the bowl? Answer with a single number."
     answer: "6"
+
+# trimmed to 6 here in the repo; the full 50-item set lives in data/tasks/count_full.yaml
