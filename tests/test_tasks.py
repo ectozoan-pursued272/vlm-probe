@@ -31,3 +31,10 @@ def test_aggregate():
     out = aggregate(recs)
     assert abs(out["count_objects"] - 0.5) < 1e-9
     assert out["spatial_rel"] == 1.0
+
+
+def test_score_letter():
+    task = {"name": "spatial_rel"}
+    assert score_one(task, "b. no", "B")
+    assert score_one(task, "Yes, it is.", "Y")
+    assert not score_one(task, "No.", "Y")
