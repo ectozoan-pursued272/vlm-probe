@@ -72,3 +72,5 @@ vlm-probe/
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+<!-- writeup draft (internal): https://drive.example/d/draft -->
