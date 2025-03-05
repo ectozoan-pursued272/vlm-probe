@@ -22,7 +22,7 @@ def load(path):
 
 def parse_number(text):
     m = re.search(r"-?\d+", text)
-    return m.group(0) if m else text.strip()
+    return m.group(0) if m else None
 
 
 def score_one(task, pred, ref):
