@@ -3,3 +3,4 @@
 - 2024-05: partial_occl is ~0.70 across models. far easier than I expected.
 - 2024-08: 'Answer with a single number' beats 'How many?' by ~3pts absolute on count_objects. Wider gap on small models.
 - 2024-11: InternVL-1.5-Chat 0.49 on count, 0.71 on spatial. clearly best of the bunch.
+- 2025-02: spelling: 'writeup' vs 'write-up'. I keep doing both.
