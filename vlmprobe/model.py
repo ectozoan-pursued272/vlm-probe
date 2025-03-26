@@ -12,7 +12,7 @@ def load(name, device="cuda", dtype="float16"):
     """Return (processor, model). Dispatches by name prefix."""
     hf = _hf()
     torch_dtype = getattr(torch, dtype)
-    if "llava-" in name.lower() or "llava_" in name.lower():
+    if "llava" in name:
         proc  = hf.AutoProcessor.from_pretrained(name)
         model = hf.LlavaForConditionalGeneration.from_pretrained(name, torch_dtype=torch_dtype)
     elif "Qwen-VL" in name or "qwen-vl" in name.lower():
@@ -20,6 +20,7 @@ def load(name, device="cuda", dtype="float16"):
         model = hf.AutoModelForCausalLM.from_pretrained(name, torch_dtype=torch_dtype,
                                                         trust_remote_code=True)
     elif "InternVL" in name or "internvl" in name.lower():
+        # InternVL has a `chat` method on the model; we still wrap with the standard generate
         proc  = hf.AutoTokenizer.from_pretrained(name, trust_remote_code=True)
         model = hf.AutoModel.from_pretrained(name, torch_dtype=torch_dtype,
                                              trust_remote_code=True)
