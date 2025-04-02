@@ -47,11 +47,11 @@ seeds live in the task YAMLs.
 
 | Task             | Items | What it asks                                    |
 | ---------------- | ----- | ----------------------------------------------- |
-| `count_objects`  |   ~50 | how many X are there? (1..8)                    |
-| `spatial_rel`    |   ~30 | is X to the left of Y? above? in front of?      |
-| `colour_attr`    |   ~30 | what colour is the X?                           |
-| `text_in_image`  |   ~20 | what does the sign say? (small text, OCR-ish)   |
-| `partial_occl`   |   ~25 | is X fully visible? partially occluded? hidden? |
+| `count_objects`  |  400  | how many X are there? (1..8)                    |
+| `spatial_rel`    |  300  | is X to the left of Y? above? in front of?      |
+| `colour_attr`    |  300  | what colour is the X?                           |
+| `text_in_image`  |  200  | what does the sign say? (small text, OCR-ish)   |
+| `partial_occl`   |  250  | is X fully visible? partially occluded? hidden? |
 
 All five are multiple-choice. Scoring is exact-match on the parsed answer.
 
@@ -72,5 +72,3 @@ vlm-probe/
 ## License
 
 MIT, see [LICENSE](LICENSE).
-
-<!-- writeup draft (internal): https://drive.example/d/draft -->
