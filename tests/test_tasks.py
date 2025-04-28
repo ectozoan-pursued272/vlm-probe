@@ -38,3 +38,7 @@ def test_score_letter():
     assert score_one(task, "b. no", "B")
     assert score_one(task, "Yes, it is.", "Y")
     assert not score_one(task, "No.", "Y")
+
+
+def test_aggregate_empty_safe():
+    assert aggregate([]) == {}
