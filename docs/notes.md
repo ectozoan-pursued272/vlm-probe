@@ -1,6 +1,18 @@
-- 2023-10: LLaVA gets 2/4 on count_objects. answers tend to start with 'there are', need a parser.
-- 2023-11: Qwen-VL-Chat 0.40 on count vs LLaVA 0.31. spatial tied around 0.55.
-- 2024-05: partial_occl is ~0.70 across models. far easier than I expected.
-- 2024-08: 'Answer with a single number' beats 'How many?' by ~3pts absolute on count_objects. Wider gap on small models.
-- 2024-11: InternVL-1.5-Chat 0.49 on count, 0.71 on spatial. clearly best of the bunch.
-- 2025-02: spelling: 'writeup' vs 'write-up'. I keep doing both.
+# notes
+
+things that surprised me while building this:
+
+- counting is genuinely hard for all the open VLMs I tried. >5 objects basically falls
+  apart. LLaVA-1.5 was at 0.31 on `count_objects`, Qwen-VL-Chat at 0.40, InternVL-1.5 at
+  0.49. The pattern is the same: 1-3 mostly right, 4+ random.
+- partial occlusion is the easiest task, weirdly. I'd expected the opposite.
+- prompt phrasing matters by ~3 points absolute. "Answer with a single number" beats
+  "How many?" alone by a lot.
+- one of the LLaVA evals was wrong for two months because the answer-parser stripped a
+  leading "the" so "the cat" matched both "cat" and "the dog". Lesson: write the scorer
+  tests first.
+
+todo:
+- bigger occlusion set
+- add a "no, it's not there" distractor for the spatial task
+- maybe a referring-expression set
