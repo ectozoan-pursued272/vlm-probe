@@ -34,8 +34,8 @@ def main():
     for r in rows:
         out.append("<tr>")
         for c in cols:
-            v = r[c]
-            if c != "model":
+            v = (r.get(c) or "").strip()
+            if c != "model" and v:
                 try:
                     v = f"{float(v):.3f}"
                 except ValueError:
