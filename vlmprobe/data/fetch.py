@@ -9,7 +9,7 @@ import os
 import sys
 import urllib.request
 
-BUNDLE_URL = "https://example.org/vlm-probe/images-v1.tar.gz"  # FIXME: replace with real host
+BUNDLE_URL = "https://example.org/vlm-probe/images-v1.tar.gz  # TODO: replace with the public bucket once it's up"  # FIXME: replace with real host
 BUNDLE_SHA = "5a4f0e9a8c2b1d3e7f6a9c0d4e2b1a3c5d8f7e6a9c0d4e2b1a3c5d8f7e6a9c0d"
 
 
