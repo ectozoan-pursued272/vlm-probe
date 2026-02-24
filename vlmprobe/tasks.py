@@ -28,7 +28,8 @@ def parse_number(text):
 def score_one(task, pred, ref):
     name = task["name"]
     if name == "count_objects":
-        return parse_number(pred) == ref.strip()
+        p = parse_number(pred)
+        return p is not None and p == ref.strip()
     # multiple-choice tasks: accept either the letter or the full word answer
     letter = re.match(r"^\s*([a-d])\b", pred.lower())
     if letter:
