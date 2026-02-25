@@ -16,3 +16,11 @@ todo:
 - bigger occlusion set
 - add a "no, it's not there" distractor for the spatial task
 - maybe a referring-expression set
+
+
+## post-writeup todo
+
+- bigger occlusion set (250 -> 600)
+- a 'no, it's not in the image' distractor for spatial
+- a referring-expression task
+- a couple of multi-image tasks (compare two images)
