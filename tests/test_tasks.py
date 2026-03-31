@@ -42,3 +42,9 @@ def test_score_letter():
 
 def test_aggregate_empty_safe():
     assert aggregate([]) == {}
+
+
+def test_parse_number_none_on_miss():
+    from vlmprobe.tasks import parse_number
+    assert parse_number("there are a few cats") is None
+    assert parse_number("3 cats") == "3"
