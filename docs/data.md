@@ -10,12 +10,14 @@ Images come from three sources:
 Annotations are mine. The synthetic compositions are released under CC0; everything
 else has source attribution in `data/sources.tsv`.
 
-## sizes (as of v0.4)
+## sizes (final)
 
-| task            |  items |
-| --------------- | ------ |
-| count_objects   |   400  |
-| spatial_rel     |   300  |
-| colour_attr     |   300  |
-| text_in_image   |   200  |
-| partial_occl    |   250  |
+| task            | items |
+| --------------- | ----- |
+| count_objects   |  400  |
+| spatial_rel     |  300  |
+| colour_attr     |  300  |
+| text_in_image   |  200  |
+| partial_occl    |  250  |
+
+Total 1450 (image, prompt, answer) triples.
